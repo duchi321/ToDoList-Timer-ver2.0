@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>To-Do-List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="index.html">My Memo</a></h1>
+        <div class="header-time">
+          <div class="date-box">
+            <h2 class="current-year"></h2>
+            <h2 class="current-date"></h2>
+          </div>
+          <div class="time-box">
+            <h2 class="current-time"></h2>
+            <h2 class="current-sec"></h2>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <main class="left-main">
+          <h2 class="main-title">Done</h2>
+          <div class="feature-column">
+            <div class="search-group">
+              <label for="search-bar" class="search-label"
+                ><i class="fa-solid fa-magnifying-glass search-img"></i
+              ></label>
+              <input type="text" id="search-bar" class="search-input" />
+            </div>
+            <div
+              class="toggle-box change-mode"
+              role="group"
+              aria-label="View mode selection"
+            >
+              <i class="fa fa-th card-mode-button" aria-label="Card view"></i>
+              <i class="fa fa-bars list-mode-button" aria-label="List view"></i>
+              <i class="fa-solid fa-circle-xmark delete-all-btn"></i>
+            </div>
+          </div>
+
+          <div class="cards-layout custom-scrollbar">
+            <div class="cards-none"></div>
+            <div class="cards-box">
+              <div class="display-cards" data-mode="card-mode">
+                <!-- display in here -->
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="middle-time">
+          <div class="date-box">
+            <h2 class="current-year"></h2>
+            <h2 class="current-date"></h2>
+          </div>
+          <div class="time-box">
+            <h2 class="current-time"></h2>
+            <h2 class="current-sec"></h2>
+          </div>
+        </div>
+        <nav class="right-nav">
+          <ul class="nav-item">
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house nav-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="done.html"
+                ><i class="fa-solid fa-circle-check nav-icon"></i
+              ></a>
+            </li>
+            <li class="palette-main">
+              <!-- 主 icon（控制展開的按鈕） -->
+              <i class="fa-solid fa-palette nav-icon palette-button"></i>
+              <!-- 展開選單 -->
+              <ul class="palette-list">
+                <li data-theme="default">
+                  <i class="fa-solid fa-palette nav-icon"></i>
+                </li>
+                <li data-theme="dark">
+                  <i class="fa-solid fa-palette nav-icon"></i>
+                </li>
+                <li data-theme="office">
+                  <i class="fa-solid fa-palette nav-icon"></i>
+                </li>
+                <li data-theme="green" class="default-option">
+                  <i class="fa-solid fa-palette nav-icon"></i>
+                </li>
+                <li data-theme="violet" class="default-option">
+                  <i class="fa-solid fa-palette nav-icon"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-question nav-icon how-to-use"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-text">make by duchi4321</p>
+    </footer>
+    <script src="./public.js"></script>
+    <script src="./done.js"></script>
+  </body>
+</html>
